@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コマドリ実験</title>
+    <style>
+        #heart {
+            position: absolute;
+        	top: 64px;
+        	left: 64px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body onload="draw();">
+    <canvas id="canvas" width="1500" height="1500"></canvas>
+    <script>
+        function draw(){
+            var ctx=document.getElementById('canvas').getContext('2d');
+            var img=new Image();
+            img.onload=function(){
+                for (var i=0;i<4;i++){
+                    for (var j=0;j<3;j++){
+                        ctx.drawImage(img, j*5, i*3, 50, 38);
+                    }
+                }
+            };
+            img.src='heart.png';
+            var myInt=1;
+            var imagi=new Image();
+            imagi.src='heart.png';
+            document.body.addEventListener("click", function(event) {
+                if(myInt%3==1){
+                    img.src='透過接続.png';
+                }
+                if(myInt%3==2){
+                    img.src='tomei.png';
+                }
+                if(myInt%3==0){
+                    img.src='heart.png';
+                }
+                myInt+=1;
+            });
+            document.body.addEventListener("mousemove", function(event) {
+                var myX=event.pageX;
+                var myY=event.pageY;
+                ctx.drawImage(img, myX, myY,50, 38);
+                
+            });
+        }
+    </script>
+</body>
+</html>
