@@ -1,0 +1,2 @@
+-32px -32px 71px #ffffff73,
+             32px 32px 51px rgba(94, 104, 121, .288);

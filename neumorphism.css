@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #dde1e7;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: #dde1e7;
+}
+.neumorphism-1{
+    height: 500px;
+    width: 500px;
+    color: #31344B;
+    border-radius: 1%;
+    background: #dde1e7;
+    box-shadow:  32px 32px 63px #bebebe,
+             -32px -32px 63px #ffffff;
+}
+.neumorphism-1 h1{
+    margin-left: 10px;
+}
+.neumorphism-1 p{
+    margin-left: 10px;
+}
+
+.neumorphism-2{
+    margin: 20px;
+    height: 500px;
+    width: 500px;
+    border-radius: 1%;
+    background: #dde1e7;
+    box-shadow:  inset 32px 32px 63px #bebebe,
+             inset -32px -32px 63px #ffffff;
+}
+.neumorphism-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background: #dde1e7;
+    box-shadow:  32px 32px 63px #bebebe,
+             -32px -32px 63px #ffffff;
+    position: relative;
+}
+.neumorphism-3:after{
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow:  inset 32px 32px 63px #bebebe,
+             inset -32px -32px 63px #ffffff;
+
+}
+
+.social-part .fa{
+    padding-right:20px;
+}
+ul li a{
+    margin-right: 20px;
+}
