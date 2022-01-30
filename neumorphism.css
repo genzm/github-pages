@@ -1,10 +1,68 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 body{
     background-color: #dde1e7;
+    min-height:100vh;
 }
+
+.NeubuttonBase{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 30px;
+
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    color: #31344B;
+    border-radius: 10%;
+    background: #dde1e7;
+    box-shadow:  32px 32px 63px #bebebe,
+             -32px -32px 63px #ffffff;
+    position: relative;
+}
+.Neubutton {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30%;
+    width: 30%;
+    color: #31344B;
+    border-radius: 10%;
+    background: #dde1e7;
+    box-shadow:  3px 3px 6px #bebebe,
+             -32px -32px 63px #ffffff;
+    position: relative;
+    outline: transparent;
+    border: transparent;
+
+
+}
+.Neubutton:active {
+    font-size: 90%;
+    background: #dde1e7;
+    box-shadow: inset 3px 3px 6px #bebebe,
+             inset -32px -32px 63px #dde1e7;
+    outline: transparent;
+    border: transparent;
+         
+}
+.Neubutton:focus {
+    font-size: 90%;
+    background: #dde1e7;
+    box-shadow: inset 3px 3px 6px #bebebe,
+             inset -32px -32px 63px #dde1e7;
+    outline: transparent;
+    border: transparent;
+         
+}
+
 
 .container {
     display: flex;
@@ -15,10 +73,11 @@ body{
     background: #dde1e7;
 }
 .neumorphism-1{
-    height: 100%;
-    width: 100%;
+    margin: 50px;
+    height: 500px;
+    width: 500px;
     color: #31344B;
-    border-radius: 1%;
+    border-radius: 3%;
     background: #dde1e7;
     box-shadow:  32px 32px 63px #bebebe,
              -32px -32px 63px #ffffff;
@@ -31,10 +90,10 @@ body{
 }
 
 .neumorphism-2{
-    margin: 20px;
+    margin: 50px;
     height: 500px;
     width: 500px;
-    border-radius: 1%;
+    border-radius: 10%;
     background: #dde1e7;
     box-shadow:  inset 32px 32px 63px #bebebe,
              inset -32px -32px 63px #ffffff;
